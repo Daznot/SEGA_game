@@ -1,0 +1,12 @@
+{
+  "name": "game",
+  "version": "0.0.1",
+  "description": "Game project",
+  "main": "./server/app.js",
+  "scripts": {
+    "postinstall": "cd server && npm i && npx sequelize db:migrate && cd ../client && npm i && npm run build",
+    "start": "cd server && npm start"
+  },
+  "author": "",
+  "license": "ISC"
+}

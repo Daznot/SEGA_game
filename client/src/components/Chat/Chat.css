@@ -1,0 +1,59 @@
+.message {
+   color: black;
+}
+
+.nes-container_chat{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 900px;
+   margin: 50px auto!important;
+   gap: 20px;
+   background-color: #212529;
+   padding-top: 50px!important;
+   overflow: auto;
+   height:400px;
+}
+
+.message {
+   word-break: break-all;
+   color: #fff;
+}
+
+.btn-back {
+   margin-left: 200px;
+   margin-top: 200px!important;
+}
+
+.messages {
+   width: 489px;
+}
+
+.form__chat {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+}
+
+.chat {
+   margin-top: 150px!important;
+}
+
+.anim-show-chat {
+    color: #fff;
+    text-align: center;
+    opacity: 0;
+    transition: 1s;
+    animation: show 0.5s 1;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+  }
+  
+  @keyframes show {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }

@@ -1,0 +1,7 @@
+.enemy 
+{
+  position: absolute;
+  background-color: transparent;
+  display: flex;
+  user-select: none;
+}

@@ -1,0 +1,116 @@
+html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  /* background-size: contain; */
+  font-family: 'Press Start 2P', sans-serif;
+  padding: 0;
+}
+
+.anim-show-gamemenu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+}
+
+p {
+  margin: 5px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #eee;
+  transition: all linear 0.3s;
+}
+
+a:hover {
+  color: #ecbb15;
+  cursor: pointer;
+  text-shadow: rgb(172, 136, 15) 0px 1px 0px, rgb(108, 86, 10) 0px 2px 0px,
+    rgba(0, 0, 0, 0.199219) 0px 3px 1px, rgba(0, 0, 0, 0.296875) 0px 4px 2px;
+  transition: all linear 0.3s;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  width: 100%;
+  text-align: center;
+  line-height: 2.5em;
+  float: left;
+  line-height: 60px;
+  font-size: 1.5em;
+  text-shadow: rgb(187, 187, 187) 0px 1px 0px, rgb(181, 181, 181) 0px 2px 0px,
+    rgba(0, 0, 0, 0.199219) 0px 3px 1px, rgba(0, 0, 0, 0.296875) 0px 4px 3px;
+}
+
+li a {
+  display: block;
+}
+
+@-webkit-keyframes anim {
+  0% {
+    -webkit-transform: rotate(4deg);
+  }
+  50% {
+    -webkit-transform: rotate(-4deg);
+  }
+  100% {
+    -webkit-transform: rotate(4deg);
+  }
+}
+
+.anim-show-gamemenu {
+  color: #fff;
+  text-align: center;
+  opacity: 0;
+  transition: 1s;
+  animation: show 0.5s 1;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.game-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px!important;
+  align-items: center;
+  gap: 20px;
+  background-color: white;
+  color: black;
+  box-sizing: border-box;
+  width: 700px;
+}
+
+
+.btn-menu {
+  width: 500px!important;
+  white-space: nowrap;
+}
+
+.nes-btn__oth {
+  padding: 0!important;
+  margin: 0!important;
+  width: 500px!important;
+  left: 0%!important;
+}

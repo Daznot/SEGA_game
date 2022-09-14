@@ -1,0 +1,6 @@
+.hero {
+	position: relative;
+	background-color: transparent;
+	display: flex;
+	user-select: none;
+}

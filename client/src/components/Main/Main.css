@@ -1,0 +1,86 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+body {
+  background-image: url('../../../public/img/bg__all.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Press Start 2P', sans-serif;
+}
+
+.anim-show-main {
+  height: 25%;
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+}
+
+p {
+  margin: 5px 0;
+}
+
+li a {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: #eee;
+  transition: all linear 0.3s;
+}
+
+a:hover {
+  color: #ecbb15;
+  cursor: pointer;
+  text-shadow: rgb(172, 136, 15) 0px 1px 0px, rgb(108, 86, 10) 0px 2px 0px,
+    rgba(0, 0, 0, 0.199219) 0px 3px 1px, rgba(0, 0, 0, 0.296875) 0px 4px 2px;
+  transition: all linear 0.3s;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+li {
+  width: 100%;
+  text-align: center;
+  line-height: 2.5em;
+  float: left;
+}
+
+@-webkit-keyframes anim {
+  0% {
+    -webkit-transform: rotate(4deg);
+  }
+  50% {
+    -webkit-transform: rotate(-4deg);
+  }
+  100% {
+    -webkit-transform: rotate(4deg);
+  }
+}
+
+.anim-show-main {
+  color: #fff;
+  opacity: 0;
+  transition: 1s;
+  animation: show 1s 1;
+  animation-fill-mode: forwards;
+  animation-delay: 0.1s;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
